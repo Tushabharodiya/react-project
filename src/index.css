@@ -1,0 +1,361 @@
+:root {
+  --primary: #359b41;
+  --h-color: #2b2b2b;
+  --text-color: #424242;
+  --bg-color: #518f2b;
+  --p-color: #6a6a6a;
+  --black: #000000;
+  --s-color: #f0f0f0;
+  --white: #ffffff;
+  --background: #fdfdfd;
+  --head-font: 'Castoro';
+  --hover: all 0.5s;
+  --shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  background-image: url(https://hrkit.rometheme.pro/loveit/wp-content/uploads/sites/38/2022/03/background-9.jpg);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==============navbar============ */
+.navbar img {
+  width: 180px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+
+.navbar {
+  background-color: #ededed;
+  position: relative;
+}
+
+.navbar .nav-item a {
+  color: var(--h-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 15px;
+}
+.navbar .nav-item:hover .menu{
+  visibility: visible;
+  position: fixed;
+  top: 60px;
+}
+.navbar .menu{
+  color: var(--h-color);
+  position: absolute;
+  width: 220px;
+  background-color: #a0cb5b;
+  visibility: hidden;
+  z-index: 1;
+}
+.navbar .menu li{
+  font-size: 18px;
+  padding: 12px 15px;
+  border-bottom: 2px solid var(--white);
+  cursor: pointer;
+}
+.navbar .menu li:hover{
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+/* ===============banner============ */
+.banner {
+  padding: 86px 0;
+}
+
+.banner .banner-data h2 {
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 70px;
+  margin-bottom: 30px;
+  color: var(--h-color);
+}
+
+.banner p {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.banner .play {
+  height: 60px;
+  width: 60px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff892b;
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 24px;
+}
+
+.banner-part {
+  position: relative;
+}
+
+/* ===============btn============ */
+.main-btn button {
+  padding: 12px 30px;
+  color: var(--s-color);
+  background-image: linear-gradient(230deg, rgb(81, 143, 43) 0%, rgb(160, 203, 91) 100%);
+  border-radius: 30px;
+  border: transparent;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.main-btn button:hover{
+  color: #2d660b;
+}
+/* =============slidecard============= */
+.sidecard {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+.sidecard .card {
+  display: inline-block;
+  padding: 20px 40px 20px 20px;
+  background-color: var(--bg-color);
+}
+
+.sidecard .card-img {
+  width: 60px;
+}
+
+.sidecard .card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.sidecard .card p {
+  color: #e6e6e6;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.sidecard .card span i {
+  color: gold;
+  margin-right: 5px;
+}
+
+/* ================vegetable=================== */
+.veg .veg-info {
+  padding: 20px 30px 20px;
+  background-color: #ff892b;
+  border-radius: 10px;
+}
+
+.veg .veg-data span {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.veg .veg-data h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white);
+  margin: 10px 0px 20px;
+}
+
+.veg .veg-data a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.veg .veg-img img {
+  width: 180px;
+}
+
+/* ===========================about================= */
+.about .about-data span {
+  font-size: 18px;
+  color: var(--p-color);
+
+}
+
+/* ===========================food======================= */
+.food-head {
+  text-align: center;
+}
+
+.food-head span {
+  color: #ff7800;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.food-head h2 {
+  font-size: 57px;
+  color: var(--h-color);
+  font-weight: 700;
+}
+.food .card:hover .card-img{
+  animation: dish 10s linear  infinite running;
+  
+}
+@keyframes dish {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+.food .card {
+  padding: 20px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  margin: 30px 0;
+}
+
+.food .card .card-data h2 {
+  font-size: 25px;
+  color: var(--h-color);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.food .card .card-data span i {
+  font-size: 16px;
+  padding-left: 5px;
+  color: gold;
+}
+
+/* ==========================blog================== */
+.blog {
+  padding: 50px 0;
+}
+
+.blog .card {
+  margin: 20px 0px 50px;
+}
+
+.blog .card .card-img {
+  overflow: hidden;
+}
+
+.blog .card-data {
+  padding: 20px;
+}
+
+.blog .card-data span {
+  color: #c4c4c4;
+}
+
+.blog .card-data span i {
+  color: #009F0E;
+}
+
+.blog .card-data h2 {
+  font-size: 22px;
+  color: var(--h-color);
+  font-weight: 900;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.blog .card-data p {
+  font-size: 15px;
+  color: var(--p-color);
+}
+
+.blog .card .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.blog .card .card-img img:hover {
+  transform: scale(1.05) rotate(3deg);
+}
+
+/* ======================footer================== */
+footer {
+  padding: 86px 0;
+  background-color: #d7f1c7;
+}
+
+footer .fot-logo img {
+  width: 180px;
+}
+footer .fot-data h5{
+  color: var(--bg-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+footer .fot-data ul li{
+    font-size: 17px;
+    color: var(--text-color);
+    padding: 13px 0;
+}
+footer .fot-data p{
+  color: var(--text-color);
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+footer .fot-img img{
+  width: 100px;
+}
+footer .fot-info{
+  padding: 0 30px;
+}
+/* =================footer-bottom=============== */
+.footer-bottom{
+  padding: 20px 0;
+  background-color: var(--primary);
+}
+.footer-bottom .web-data p{
+  color: var(--white);
+}
+.footer-bottom .web-data span i{
+  height:24px;
+  width: 24px;
+  background-color: var(--white);
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--primary);
+  transition: all 0.5s;
+}
+.footer-bottom .web-data span i:hover{
+  background-color:#a0cb5b;
+}
